@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.jirobird.view.UntochebleConstrainLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="#fff">
+
+    <TextView android:id="@+id/tv_timer"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintBottom_toTopOf="@+id/tv_people"
+              android:layout_marginStart="40dp"
+              android:layout_marginEnd="40dp"
+              android:textSize="60sp"
+              android:textAlignment="center"
+              app:layout_constraintVertical_chainStyle="packed"/>
+
+    <TextView android:id="@+id/tv_people"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toBottomOf="@id/tv_timer"
+              app:layout_constraintBottom_toTopOf="@+id/b_add_human"
+              android:layout_marginTop="40dp"
+              android:layout_marginStart="40dp"
+              android:layout_marginEnd="40dp"
+              android:textAlignment="center"
+              android:textSize="40sp"/>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/b_add_human"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/OurFloatinButton"
+
+            android:text="+1 человек"
+            app:icon="@drawable/ic_man"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="30dp"
+
+
+            />
+</com.github.jirobird.view.UntochebleConstrainLayout>
